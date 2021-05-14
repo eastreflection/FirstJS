@@ -1,0 +1,22 @@
+<html>
+<head><title>JP-5</title></head>
+ <script>
+ function  check(){
+ var a,b,c
+ a=parseInt(f1.t1.value)
+b=parseInt(f1.t2.value)
+ c=a
+ a=b
+ b=c
+ document.write("<br><br>The swapped number is (a)<br><br> " +a)
+ document.write("<br><br>The swapped number is (b)<br><br> " +b)
+ }
+ </script>
+<body bgcolor="black" text="red" >
+  <form name="f1">
+Enter first number (a)<input type="text" name="t1"><br><br>
+ Enter Second number(b) <input type="text" name="t2"><br><br>
+ <input type="button" value="SUBMIT"  onmouseout="check()">
+ </form>
+ </body>
+</html>
