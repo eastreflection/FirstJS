@@ -1,0 +1,37 @@
+<html>
+<body>
+<script language="JavaScript">
+var oper,x,y,r;
+choice=prompt("Enter a choice:1.Odd/Even 2.Positive/Negative 3. character-case 4. max of 2  5. Prime or composite")
+x=prompt("Enter first number")
+y=prompt("Enter second number")
+c=prompt("Enter a small case or a capital case alphabet")
+switch(choice)
+   {
+       case '1':      r=x+y
+                          document.write("Result of + is:" +r+"<br>")
+                          break;
+       case '2':        if(x>y)
+                               r=x-y
+                           else
+                               r=y-x
+                          document.write("Result of - is:"+r+"<br>")
+                          break;
+       case '3':         r=x*y
+                           document.write("Result of * is:"+r+"<br>")
+                           break;
+       case '4':      if(x>y)
+                               r=x/y
+                           else
+                               r=y/x
+                          document.write("Result of / is:"+r+"<br>")
+                          break;
+       case '5':      if(x>y)
+                               r=x%y
+                           else
+                               r=y%x
+                          document.write("Result of % is:"+r+"<br>")
+                          break;
+       default:      document.write("Invalid operator")
+   }
+</script></body></html>

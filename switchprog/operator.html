@@ -1,0 +1,36 @@
+<html>
+<body>
+<script language="JavaScript">
+var oper,x,y,r;
+oper=prompt("Enter an arithmetic operator:+,-,*,/,% ")
+x=prompt("Enter first number")
+y=prompt("Enter second number")
+switch(oper)
+   {
+       case '+':      r=x+y
+                          document.write("Result of + is:" +r+"<br>")
+                          break;
+       case '-':        if(x>y)
+                               r=x-y
+                           else
+                               r=y-x
+                          document.write("Result of - is:"+r+"<br>")
+                          break;
+       case '*':         r=x*y
+                           document.write("Result of * is:"+r+"<br>")
+                           break;
+       case '/':      if(x>y)
+                               r=x/y
+                           else
+                               r=y/x
+                          document.write("Result of / is:"+r+"<br>")
+                          break;
+       case '%':      if(x>y)
+                               r=x%y
+                           else
+                               r=y%x
+                          document.write("Result of % is:"+r+"<br>")
+                          break;
+       default:      document.write("Invalid operator")
+   }
+</script></body></html>
